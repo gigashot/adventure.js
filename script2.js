@@ -23,7 +23,7 @@ function startMission() {
 
             if (infiltrationSuccess) {
                 alert("You have successfully infiltrated MavelonCorp's headquarters.");
-                let action = prompt("You have obtained crucial information. Do you prefer to (1) Upload malware to the center PC or (2) Upload malware to the server directly?");
+                let action = prompt("where do you upload the malware ? (1) Upload malware to the center PC (2) Upload malware to the server directly?");
                 if (action === "1") {
                     console.log("[Redacted] Well done, " + username + ". You've successfully uploaded malware to the center PC.");
                     alert("Your malware was automaticaly rejected, everybody knows that the Boss doesnt actually work, and just makes his subordinates do the work for him");
@@ -51,10 +51,10 @@ function startMission() {
 function minigame(username) {
     let attempts = 3;
 
-    alert("You have 3 attempts to push the malware to GitHub, branch master.");
+    alert("You have 3 attempts to push the malware to GitHub");
 
     while (attempts > 0) {
-        let userInput = prompt("Attempt #" + (4 - attempts) + ": push the malware to GitHub, to branch master!:");
+        let userInput = prompt("Attempt #" + (4 - attempts) + ": push the malware to GitHub (branch master!):");
 
         if (userInput.toLowerCase() === 'git push origin master') {
             alert("Malware successfully pushed to GitHub! You've bypassed MavelonCorp's security.");
