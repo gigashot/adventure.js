@@ -1,5 +1,6 @@
-alert("open cosole to begin your work-day")
+
 alert("make sure to read the cosole first, then the alert")
+alert("open cosole after closing this alert to begin your work-day")
 
 document.getElementById("login-form").addEventListener("submit", function(event) {
   event.preventDefault();
